@@ -1,4 +1,4 @@
-public abstract class Instrument extends Product {
+public abstract class Instrument extends Product implements IPlay {
 
     private InstrumentType type;
     private String colour;

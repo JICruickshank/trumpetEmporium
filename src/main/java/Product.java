@@ -1,5 +1,5 @@
-public abstract class Product {
-    
+public abstract class Product implements ISell {
+
     private String description;
     private double purchasePrice;
     private double salePrice;
@@ -21,4 +21,10 @@ public abstract class Product {
     public double getSalePrice() {
         return salePrice;
     }
+
+    public double calculateMarkUp() {
+        return getSalePrice() - getPurchasePrice();
+
+    }
+
 }
