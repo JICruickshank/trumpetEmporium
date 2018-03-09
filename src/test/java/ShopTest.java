@@ -17,7 +17,13 @@ public class ShopTest {
     }
 
     @Test
-    public void ShopIsEmpty() {
+    public void testShopIsEmpty() {
         assertEquals(0, shop.getProductList().size());
+    }
+
+    @Test
+    public void testCanAddToStock() {
+        shop.addToStock(guitar);
+        assertEquals(1, shop.getProductList().size());
     }
 }
