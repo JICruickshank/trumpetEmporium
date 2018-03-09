@@ -1,10 +1,11 @@
-public abstract class Instrument {
+public abstract class Instrument extends Product {
 
     private InstrumentType type;
     private String colour;
     private String material;
 
-    public Instrument(InstrumentType type, String colour, String material) {
+    public Instrument(String description, double purchasePrice, double salePrice, InstrumentType type, String colour, String material) {
+        super(description, purchasePrice, salePrice);
         this.type = type;
         this.colour = colour;
         this.material = material;

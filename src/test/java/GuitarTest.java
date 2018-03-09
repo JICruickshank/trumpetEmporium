@@ -9,7 +9,7 @@ public class GuitarTest {
 
     @Before
     public void setUp() throws Exception {
-        guitar = new Guitar(InstrumentType.STRING, "White", "Wood", 6);
+        guitar = new Guitar("Bass Guitar", 150, 300, InstrumentType.STRING, "White", "Wood", 6);
     }
 
     @Test
@@ -30,5 +30,10 @@ public class GuitarTest {
     @Test
     public void testGetMaterial() {
         assertEquals("Wood", guitar.getMaterial());
+    }
+
+    @Test
+    public void testCanGetDescription() {
+        assertEquals("Bass Guitar", guitar.getDescription());
     }
 }
