@@ -8,7 +8,7 @@ public class Piano extends Instrument {
 
     @Override
     public String play() {
-        return null;
+        return "This is what a piano sounds like";
     }
 
 

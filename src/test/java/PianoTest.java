@@ -13,7 +13,12 @@ public class PianoTest {
     }
 
     @Test
-    public void canGetWeight() {
+    public void testCanGetWeight() {
         assertEquals(500, piano.getWeight());
+    }
+
+    @Test
+    public void testCanPlay() {
+        assertEquals("This is what a piano sounds like", piano.play());
     }
 }
