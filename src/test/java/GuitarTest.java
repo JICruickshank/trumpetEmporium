@@ -36,4 +36,15 @@ public class GuitarTest {
     public void testCanGetDescription() {
         assertEquals("Bass Guitar", guitar.getDescription());
     }
+
+    @Test
+    public void testCanGetPurchasePrice() {
+        assertEquals(150, guitar.getPurchasePrice(), 0.01);
+
+    }
+
+    @Test
+    public void testCanGetSalePrice() {
+        assertEquals(300, guitar.getSalePrice(), 0.01);
+    }
 }

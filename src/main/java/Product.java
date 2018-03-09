@@ -13,4 +13,12 @@ public abstract class Product {
     public String getDescription() {
         return description;
     }
+
+    public double getPurchasePrice() {
+        return purchasePrice;
+    }
+
+    public double getSalePrice() {
+        return salePrice;
+    }
 }
