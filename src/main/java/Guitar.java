@@ -1,4 +1,4 @@
-public class Guitar extends Instrument {
+public class Guitar extends Instrument implements IPlay {
     private int strings;
 
     public Guitar(String description, double purchasePrice, double salePrice, InstrumentType type, String colour, String material, int strings) {
@@ -9,6 +9,11 @@ public class Guitar extends Instrument {
 
     public int getNoOfStrings() {
         return strings;
+    }
+
+    @Override
+    public String play() {
+        return "Generic guitar noise";
     }
 }
 
