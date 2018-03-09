@@ -21,4 +21,14 @@ public class GuitarTest {
     public void testGetType() {
         assertEquals(InstrumentType.STRING, guitar.getType());
     }
+
+    @Test
+    public void testGetColour() {
+        assertEquals("White", guitar.getColour());
+    }
+
+    @Test
+    public void testGetMaterial() {
+        assertEquals("Wood", guitar.getMaterial());
+    }
 }
