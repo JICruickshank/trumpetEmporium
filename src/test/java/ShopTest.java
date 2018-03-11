@@ -14,7 +14,7 @@ public class ShopTest {
     public void setUp() throws Exception {
         shop = new Shop();
         guitar = new Guitar("Bass Guitar", 150, 300, InstrumentType.STRING, "White", "Wood", 6);
-        accessory = new Accessory("Guitar Case", 5, 20);
+        accessory = new Accessory("Guitar Case", 5, 20, InstrumentType.STRING);
     }
 
     @Test

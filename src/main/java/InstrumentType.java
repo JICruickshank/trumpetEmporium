@@ -1,4 +1,5 @@
 public enum InstrumentType {
     STRING,
-    KEYBOARD
+    KEYBOARD,
+    PERCUSSION
 }
