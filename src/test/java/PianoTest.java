@@ -9,7 +9,7 @@ public class PianoTest {
 
     @Before
     public void setUp() throws Exception {
-        piano = new Piano("Grand Piano", 6000, 10000, InstrumentType.KEYBOARD, "Mahogany", "Wood", 500);
+        piano = new Piano("Grand Piano", 6000, 10000, InstrumentType.KEYBOARD, "Mahogany", "Wood", 500, 2);
     }
 
     @Test

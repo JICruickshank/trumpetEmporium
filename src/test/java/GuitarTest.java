@@ -9,7 +9,7 @@ public class GuitarTest {
 
     @Before
     public void setUp() throws Exception {
-        guitar = new Guitar("Bass Guitar", 150, 300, InstrumentType.STRING, "White", "Wood", 6);
+        guitar = new Guitar("Bass Guitar", 150, 300, InstrumentType.STRING, "White", "Wood", 6, 1);
     }
 
     @Test
@@ -56,5 +56,10 @@ public class GuitarTest {
     @Test
     public void testCalculateMarkUp() {
         assertEquals(150, guitar.calculateMarkUp(), 0.01);
+    }
+
+    @Test
+    public void testCanGetProductNumber() {
+        assertEquals(1, guitar.getProductNumber());
     }
 }

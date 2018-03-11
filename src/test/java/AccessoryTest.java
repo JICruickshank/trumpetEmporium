@@ -9,7 +9,7 @@ public class AccessoryTest {
 
     @Before
     public void setUp() throws Exception {
-        accessory = new Accessory("Drum sticks", 10, 20, InstrumentType.PERCUSSION);
+        accessory = new Accessory("Drum sticks", 10, 20, InstrumentType.PERCUSSION, 4);
     }
 
     @Test

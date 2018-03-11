@@ -15,8 +15,9 @@ public class Shop {
         stock.add(product);
     }
 
-    public void removeFromStock(Product product) {
-                stock.remove(product);
+    public void removeFromStock(int number) {
+        Product productToRemove = findProductByNumber(number);
+                stock.remove(productToRemove);
         }
 
     public int calculateTotalProfit() {
@@ -25,5 +26,16 @@ public class Shop {
              total += item.calculateMarkUp();
         }
         return total;
+    }
+
+
+    public Product findProductByNumber(int number) {
+        Product foundProduct = null;
+        for (Product product : stock) {
+            if (product.getProductNumber() == number) {
+                foundProduct = product;
+            }
+        }
+        return foundProduct;
     }
 }

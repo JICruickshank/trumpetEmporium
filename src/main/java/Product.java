@@ -3,11 +3,13 @@ public abstract class Product implements ISell {
     private String description;
     private double purchasePrice;
     private double salePrice;
+    private int number;
 
-    public Product(String description, double purchasePrice, double salePrice) {
+    public Product(String description, double purchasePrice, double salePrice, int number) {
         this.description = description;
         this.purchasePrice = purchasePrice;
         this.salePrice = salePrice;
+        this.number = number;
     }
 
     public String getDescription() {
@@ -27,4 +29,7 @@ public abstract class Product implements ISell {
 
     }
 
+    public int getProductNumber() {
+        return number;
+    }
 }
